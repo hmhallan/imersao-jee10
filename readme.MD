@@ -15,3 +15,27 @@
 [Descritor web.xml](https://github.com/hmhallan/imersao-jee10/blob/main/descriptors/web.xml)
 
 [Configuração de Unidade de Persistência JPA](https://github.com/hmhallan/imersao-jee10/blob/main/descriptors/persistence.xml)
+
+
+### Diagrama
+
+┌────────────────┐                                        
+│                │                                        
+│                │1                                       
+│     Jogador    ├─────────Inicia─────────────┐           
+│                │                            │           
+│                │                            │           
+└───────┬────────┘                            │           
+        │1                                    │           
+        │                                     │           
+        │                                     │           
+      Possui                                  │           
+        │                                     │           
+        │N                                    │ N         
+┌───────▼────────┐                 ┌──────────▼──────────┐
+│                │                 │                     │
+│                │N               N│                     │
+│     Carta      │◄──────Usa───────┤       Partida       │
+│                │                 │                     │
+│                │                 │                     │
+└────────────────┘                 └─────────────────────┘
