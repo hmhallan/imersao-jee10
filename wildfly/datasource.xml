@@ -1,0 +1,11 @@
+<datasource jndi-name="java:jboss/datasources/SuperTrunfoDS" pool-name="SuperTrunfoDS">
+    <connection-url>jdbc:postgresql://localhost/gbr_trunfo</connection-url>
+    <driver>postgres</driver>
+    <security user-name="postgres" password="postgres"/>
+</datasource>
+
+<drivers>
+    <driver name="postgres" module="org.postgres">
+        <driver-class>org.postgresql.Driver</driver-class>
+    </driver>
+</drivers>
